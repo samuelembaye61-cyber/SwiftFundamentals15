@@ -12,11 +12,15 @@ print("How to use playgrounds to make writing Swift fun and simple")
 /*:
  Now print your own phrases to the console. Pick one of your favorite songs. Use your knowledge of the `print` function to display the song title and artist.
  */
+print("one love one heart bob marley.")
 
 
 /*:
  Use multiple `print` functions to write out some of the lyrics to the song.
  */
 
-
+print("one love one heart ")
+print("let get together feel alright ")
+print("Hear the children crying (one love)")
+print("Hear the children crying (one heart)")
 //:page 14 of 16  |  [Next: Exercise: Go! Fight! Win!](@next)
