@@ -13,6 +13,10 @@ if steps < stepGoal / 2 {
 } else {
     print("Over halfway!")
 }
+
+// Refactored using ternary operator
+print(steps < stepGoal / 2 ? "Almost halfway!" : "Over halfway!")
+
 /*:
  _Copyright © 2023 Apple Inc._
 
