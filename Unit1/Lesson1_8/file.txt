@@ -1,1 +1,12 @@
-{}
+{Step 2: Use Documentation to Learn about the UIView Class
+What are three of the primary responsibilities of a UIView object?
+What does documentation call a view that's embedded in another view?
+What does documentation call the parent view that's embedding the other view?
+What is a view's frame?
+How is a view's bounds different from its frame?}
+
+1, the responsibilities of UIView is Drawing and animation, layout And subview Management, and event handling,
+2, subview
+3, superview
+4, a view's frame defines its locatio(x,y) the size(width,height) relative to its parents.
+5, the bounds is system itself(internal) but the frame is superview. the used for bounds has drawing subview layout but the positioning/sizing in container.
