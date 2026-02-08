@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     }
     fileprivate func UpdateUI() {
         if lightOn {
-            view.backgroundColor = .black
+            view.backgroundColor = .white
             lightButton.setTitle("Turn ON", for: .normal)
         }
         else {
