@@ -21,7 +21,7 @@
 let emptyString = ""
 if emptyString.isEmpty{
     print("There's nothing here")
-}
+} 
 
 /*:
 page 1 of 5  |  [Next: Exercise - Concatenation and Interpolation](@next)
