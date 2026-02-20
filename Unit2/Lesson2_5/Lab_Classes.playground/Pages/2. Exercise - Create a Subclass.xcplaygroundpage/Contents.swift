@@ -27,10 +27,13 @@ class Spaceship {
 class Fighter: Spaceship {
     var weapon: String = ""
     var remainingFirePower: Int = 5
-    var fire: Int = 0
-        
-    if(fire<0)
-    {
+  
+    func fire()
+    {if remainingFirePower > 0 {
+        remainingFirePower -= 1
+    } else {
+        print("You have no more fire power.")
+    }
     }
 }
 
@@ -43,11 +46,16 @@ print(destroyer.position)
 destroyer.moveRight()
 print(destroyer.position)
 //:  Try to print `weapon` on `falcon`. Why doesn't this work? Provide your answer in a comment or a print statement below, and remove any code you added that doesn't compile.
- // the weapon is not in spaceship it only found in fighter
+
+//"The weapon property is not found in the Spaceship class, which is the type of the falcon instance. The weapon property is only defined in the Fighter subclass, so it cannot be accessed through an instance of the Spaceship class."
 
 //:  Add a method to `fighter` called `fire()`. This should check to see if `remainingFirePower` is greater than 0, and if so, should decrement `remainingFirePower` by one. If `remainingFirePower` is not greater than 0, print "You have no more fire power." Call `fire()` on `destroyer` a few times and print `remainingFirePower` after each method call.
-
-
+destroyer.fire()
+print(destroyer.remainingFirePower)
+destroyer.fire()
+print(destroyer.remainingFirePower)
+destroyer.fire()
+print(destroyer.remainingFirePower)
 /*:
 [Previous](@previous)  |  page 2 of 4  |  [Next: Exercise - Override Methods and Properties](@next)
  */

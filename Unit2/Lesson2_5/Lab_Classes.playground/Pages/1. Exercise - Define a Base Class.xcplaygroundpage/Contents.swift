@@ -37,7 +37,6 @@ print(falcon.count)
     print("Sorry, your ship was hit one too many times. Do you want to play again?")
 }
 else{ print("print heath") }
-
 falcon.wasHit()
 print(falcon.health)
 
