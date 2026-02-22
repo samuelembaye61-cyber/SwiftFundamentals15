@@ -7,10 +7,15 @@
 
 //:  Create a for-in loop that loops through each of the characters in the `alphabet` string below, and prints each of the values alongside the index.
 let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
-
+for loop in alphabet {
+    print("\(loop) is at index \(alphabet.firstIndex(of: loop)!)")
+}
 
 //:  Create a `[String: String]` dictionary, where the keys are names of states and the values are their capitals. Include at least three key/value pairs in your collection, then use a for-in loop to iterate over the pairs and print out the keys and values in a sentence.
-
+var nameState: [String: String] = ["Florida": "Miami", "Texas": "Dallas", "California": "Sacramento"]
+for (key, value) in nameState {
+    print("\(key) has a capital of \(value)")
+}
 
 /*:
 page 1 of 6  |  [Next: App Exercise - Movements](@next)
