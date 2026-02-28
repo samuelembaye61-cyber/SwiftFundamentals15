@@ -4,14 +4,10 @@
  - Note: The exercises below are based on a game where a spaceship avoids obstacles in space. The ship is positioned at the bottom of a coordinate system and can only move left and right while obstacles "fall" from top to bottom. The base class `Spaceship` and subclasses `Fighter` and `ShieldedShip` have been provided for you below. You will use these to complete the exercises.
  */
 class Spaceship {
-    var name: String = ""
-    var health: Int = 0
-    var position: Int = 0
-    init(name: String, health: Int, position: Int) {
-        self.name = name
-        self.health = health
-        self.position = position
-    }
+    let name: String
+    var health: Int
+    var position: Int
+
     func moveLeft() {
         position -= 1
     }
@@ -27,39 +23,47 @@ class Spaceship {
         }
     }
 
+    init(name: String, health: Int, position: Int) {
+        self.name = name
+        self.health = health
+        self.position = position
+    }
+
 }
 
 class Fighter: Spaceship {
-    
-    var weapon: String = ""
-    var remainingFirePower: Int=0
-    init(name: String, health: Int, position: Int, weapon: String, remainingFirePower: Int) {
-        super.init(name: name, health: health, position: position)
-        self.weapon = weapon
-        self.remainingFirePower = remainingFirePower
-    }
+    let weapon: String
+    var remainingFirePower: Int
+
     func fire() {
         if remainingFirePower > 0 {
-            self.remainingFirePower -= 1
+            remainingFirePower -= 1
         } else {
             print("You have no more fire power.")
         }
     }
+
+    init(name: String, health: Int, position: Int, weapon: String, remainingFirePower: Int) {
+        self.weapon = weapon
+        self.remainingFirePower = remainingFirePower
+        super.init(name: name, health: health, position: position)
+    }
 }
 
 class ShieldedShip: Fighter {
-    var shieldStrength: Int = 0
-     init(name: String, health: Int, position: Int, weapon: String, remainingFirePower: Int, shieldStrength: Int) {
-        
-        super.init(name: name, health: health, position: position, weapon: weapon, remainingFirePower: remainingFirePower)
-        self.shieldStrength = shieldStrength
-    }
+    var shieldStrength: Int
+
     override func wasHit() {
         if shieldStrength > 0 {
             shieldStrength -= 5
         } else {
             super.wasHit()
         }
+    }
+
+    init(name: String, health: Int, position: Int, weapon: String, remainingFirePower: Int, shieldStrength: Int) {
+        self.shieldStrength = shieldStrength
+        super.init(name: name, health: health, position: position, weapon: weapon, remainingFirePower: remainingFirePower)
     }
 }
 /*:
@@ -69,8 +73,7 @@ class ShieldedShip: Fighter {
 
  Then create an instance of `Spaceship` below called `falcon`. Use the memberwise initializer you just created. The ship's name should be "Falcon."
  */
-var falcon = Spaceship(name: "Falcon",health: 100,position: 5 )
-
+var falcon = Spaceship(name: "Falcon", health: 100, position: 0)
 
 
 
@@ -79,22 +82,24 @@ var falcon = Spaceship(name: "Falcon",health: 100,position: 5 )
 
  Then create an instance of `Fighter` below called `destroyer`. Use the memberwise initializer you just created. The ship's name should be "Destroyer."
  */
-var destroyer = Fighter.self
+var destroyer = Fighter(name: "Destroyer", health: 100, position: 0, weapon: "Laser", remainingFirePower: 10)
 
 /*:
  Now go add an initializer to `ShieldedShip` that takes an argument for each property on `ShieldedShip`, `Fighter`, and `Spaceship`, and sets the properties accordingly. Remember that you can call through to the initializer on `Fighter` using `super.init`.
 
  Then create an instance of `ShieldedShip` below called `defender`. Use the memberwise initializer you just created. The ship's name should be "Defender."
  */
-var defender = ShieldedShip(name: "defender", health: 100, position: 20,weapon: "none",remainingFirePower: 100, shieldStrength: 100)
-   
-//:  Create a new constant named `sameShip` and set it equal to `falcon`. Print out the position of `sameShip` and `falcon`, then call `moveLeft()` on `sameShip` and print out the position of `sameShip` and `falcon` again. Did both positions change? Why? If both were structs instead of classes, would it be the same? Why or why not? Provide your answer in a comment or print statement below.
-var sameShip = falcon
-print("The position of sameShip is \(sameShip.position)")
-print("The position of falcon is \(falcon.position)")
+var defender = ShieldedShip(name: "Defender", health: 100, position: 0, weapon: "Plasma", remainingFirePower: 5, shieldStrength: 25)
+
+let sameShip = falcon
+print("Before move - falcon position: \(falcon.position), sameShip position: \(sameShip.position)")
 sameShip.moveLeft()
-print("The position of sameShip is \(sameShip.position)")
-print("The position of falcon is \(falcon.position)")
+print("After moveLeft() on sameShip - falcon position: \(falcon.position), sameShip position: \(sameShip.position)")
+// Both positions changed because classes are reference types (both variables point to the same instance).
+// If these were structs (value types), changing one would not affect the other because a copy would be made.
+
+//:  Create a new constant named `sameShip` and set it equal to `falcon`. Print out the position of `sameShip` and `falcon`, then call `moveLeft()` on `sameShip` and print out the position of `sameShip` and `falcon` again. Did both positions change? Why? If both were structs instead of classes, would it be the same? Why or why not? Provide your answer in a comment or print statement below.
+
 
 /*:
  _Copyright © 2023 Apple Inc._
