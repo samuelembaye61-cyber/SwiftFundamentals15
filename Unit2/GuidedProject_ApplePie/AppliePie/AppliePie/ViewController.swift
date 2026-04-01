@@ -84,6 +84,12 @@ func updateUI() {
         }
         updateUI()
     }
+    
+    func startNewGame() {
+        totalWins = 0
+        totalLosse = 0
+        newround()
+    }
    
 }
 

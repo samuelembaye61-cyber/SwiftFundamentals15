@@ -17,13 +17,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" tag="8" contentMode="scaleAspectFill" semanticContentAttribute="spatial" horizontalCompressionResistancePriority="776" verticalCompressionResistancePriority="764" fixedFrame="YES" placeholderIntrinsicWidth="1343" placeholderIntrinsicHeight="955" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HOa-tv-auC">
-                                <rect key="frame" x="1" y="9" width="1343" height="955"/>
+                                <rect key="frame" x="1" y="9" width="1343" height="1037"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="245" verticalHuggingPriority="247" placeholderIntrinsicWidth="1300" placeholderIntrinsicHeight="760" image="Tree 0" translatesAutoresizingMaskIntoConstraints="NO" id="Grp-O4-eMj">
                                         <rect key="frame" x="8" y="32" width="1327" height="760"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" placeholderIntrinsicWidth="1320" placeholderIntrinsicHeight="155" axis="vertical" distribution="fillEqually" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uRj-KL-dz0">
-                                        <rect key="frame" x="8" y="792" width="1327" height="155"/>
+                                        <rect key="frame" x="8" y="792" width="1327" height="187"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2mz-fU-qbC">
                                                 <rect key="frame" x="288.5" y="0.0" width="750" height="27"/>
@@ -409,8 +409,14 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofx-6E-SgV">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuX-gw-dEF">
                                                 <rect key="frame" x="624" y="128" width="79.5" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TimerScore" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofx-6E-SgV">
+                                                <rect key="frame" x="584.5" y="160" width="158" height="27"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
