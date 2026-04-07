@@ -1,0 +1,147 @@
+{
+  "activityEntities" : [
+    "experimentCreated",
+    [
+      {
+        "createdDate" : "2026-04-06T19:53:41Z",
+        "event" : "experimentCreated",
+        "id" : "DCE542E3-A4A3-4152-841E-C0F03FA2D8E2",
+        "subtitle" : "MyMultiLabelImageClassifier 1",
+        "title" : "Model Source Created"
+      }
+    ],
+    "trainingDataAdded",
+    [
+      {
+        "createdDate" : "2026-04-06T19:54:52Z",
+        "event" : "trainingDataAdded",
+        "id" : "237F72E1-2814-42CD-A7D5-1CF0CC1A9F99",
+        "subtitle" : "lab",
+        "title" : "Training Data Added"
+      }
+    ]
+  ],
+  "contentDataResult" : {
+    "createdDate" : "2026-04-06T19:54:33Z"
+  },
+  "createdDate" : "2026-04-06T19:53:41Z",
+  "evaluationContainerEntity" : {
+    "createdDate" : "2026-04-06T19:54:53Z",
+    "evaluationEntities" : [
+
+    ],
+    "id" : "25d382ed-6956-42c2-9240-e30f410859e3",
+    "modifiedDate" : "2026-04-06T19:54:53Z",
+    "previewType" : "multiLabelImageClassifier",
+    "testingEvaluationEntity" : {
+      "analysedDataType" : "none",
+      "createdDate" : "2026-04-06T19:53:41Z",
+      "dataResult" : {
+        "createdDate" : "2026-04-06T19:54:33Z"
+      },
+      "id" : "aecb28b1-0754-4118-a7c3-51cc9fbe8a2a"
+    },
+    "trainingEvaluationEntity" : {
+      "analysedDataType" : "none",
+      "createdDate" : "2026-04-06T19:53:41Z",
+      "dataResult" : {
+        "createdDate" : "2026-04-06T19:54:33Z",
+        "dataSourceID" : "A31C3AFD-FDF7-453C-B849-77B6BA78198C",
+        "dataURL" : "file:///Users/samuelembaye/Documents/GitHub/SwiftFundamentals15/Unit1/Lesson1_7/lab/FirstTimeDebugging/FirstTimeDebugging/"
+      },
+      "dataSourceID" : "A31C3AFD-FDF7-453C-B849-77B6BA78198C",
+      "id" : "1ac4f641-2a06-48b2-b2bc-33bdc89e9d87"
+    },
+    "validationEvaluationEntity" : {
+      "analysedDataType" : "auto",
+      "createdDate" : "2026-04-06T19:53:41Z",
+      "dataResult" : {
+        "createdDate" : "2026-04-06T19:54:33Z"
+      },
+      "id" : "a554ad46-e1de-47d9-972d-fb16c97f2887"
+    }
+  },
+  "evaluationEntity" : {
+    "analysedDataType" : "none",
+    "dataResult" : {
+
+    },
+    "id" : "244e1eac-d595-46b7-a352-ee9f4a015cb2"
+  },
+  "evaluationState" : "uninitialized",
+  "id" : "D251C6B8-167B-4703-B116-DB4A79160465",
+  "modelEntity" : {
+    "createdDate" : "2026-04-06T19:53:41Z",
+    "experimentID" : "D251C6B8-167B-4703-B116-DB4A79160465",
+    "id" : "C7603905-D692-4B8C-934E-299461D116B6",
+    "modifiedDate" : "2026-04-06T19:53:41Z",
+    "title" : "",
+    "version" : "1.0"
+  },
+  "modifiedDate" : "2026-04-06T19:54:53Z",
+  "preferredFilename" : "MyMultiLabelImageClassifier 1",
+  "settingEntity" : {
+    "algorithmType" : "maxEnt",
+    "augmentations" : [
+
+    ],
+    "featureNames" : [
+
+    ],
+    "handActionClassifierAugmentations" : [
+
+    ],
+    "handPoseClassifierAugmentations" : [
+
+    ],
+    "harVideoAugmentations" : 0,
+    "seedType" : "default",
+    "styleTransferAlgorithmType" : "image",
+    "taskType" : "multiLabelImageClassifier",
+    "transferLearningEmbeddingType" : "dynamic"
+  },
+  "snapshotRole" : {
+    "withoutSnapshots" : 0
+  },
+  "state" : "uninitialized",
+  "title" : "MyMultiLabelImageClassifier 1",
+  "trainingEntity" : {
+    "analysedDataType" : "datasource",
+    "checkpointMetrics" : {
+
+    },
+    "dataResult" : {
+      "createdDate" : "2026-04-06T19:54:33Z",
+      "dataSourceID" : "099DF660-83EB-409B-88F9-E9B74045E16C",
+      "dataURL" : "file:///Users/samuelembaye/Documents/GitHub/SwiftFundamentals15/Unit1/Lesson1_7/lab/",
+      "error" : {
+        "code" : 0,
+        "domain" : "com.apple.CreateML.xpc",
+        "errorType" : "error",
+        "reason" : "Missing data for label FirstTimeDebugging. Detailed list of labels missing files: [\"FirstTimeDebugging\"]."
+      }
+    },
+    "dataSourceID" : "099DF660-83EB-409B-88F9-E9B74045E16C",
+    "featureExtractionCheckpointMayBeAvailable" : false,
+    "progress" : [
+
+    ],
+    "snapshottableCheckpoints" : {
+
+    }
+  },
+  "validationEntity" : {
+    "analysedDataType" : "auto",
+    "dataResult" : {
+      "createdDate" : "2026-04-06T19:54:33Z"
+    },
+    "splitOptions" : {
+      "strategy" : {
+        "automatic" : {
+
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

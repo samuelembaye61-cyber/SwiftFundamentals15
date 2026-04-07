@@ -1,0 +1,37 @@
+{
+  "activityEntities" : [
+    "dataSourceCreated",
+    [
+      {
+        "createdDate" : "2026-04-06T19:54:52Z",
+        "event" : "dataSourceCreated",
+        "id" : "A8D6B55A-F5DC-4491-8162-65B034216DBF",
+        "subtitle" : "lab",
+        "title" : "Data Source Created"
+      }
+    ]
+  ],
+  "createdDate" : "2026-04-06T19:54:52Z",
+  "dataPathRelativeToProjectURL" : "../Unit1/Lesson1_7/lab/",
+  "dataResult" : {
+    "createdDate" : "2026-04-06T19:54:52Z",
+    "dataSourceID" : "099DF660-83EB-409B-88F9-E9B74045E16C",
+    "dataURL" : "file:///Users/samuelembaye/Documents/GitHub/SwiftFundamentals15/Unit1/Lesson1_7/lab/",
+    "error" : {
+      "code" : 0,
+      "domain" : "com.apple.CreateML.xpc",
+      "errorType" : "error",
+      "reason" : "Missing data for label FirstTimeDebugging. Detailed list of labels missing files: [\"FirstTimeDebugging\"]."
+    }
+  },
+  "dataURL" : "file:///Users/samuelembaye/Documents/GitHub/SwiftFundamentals15/Unit1/Lesson1_7/lab/",
+  "experimentIDs" : [
+    "D251C6B8-167B-4703-B116-DB4A79160465"
+  ],
+  "id" : "099DF660-83EB-409B-88F9-E9B74045E16C",
+  "modifiedDate" : "2026-04-06T19:55:19Z",
+  "pathType" : 0,
+  "preferredFilename" : "lab",
+  "title" : "lab",
+  "version" : "1.0"
+}

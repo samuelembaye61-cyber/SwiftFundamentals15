@@ -1,0 +1,29 @@
+{
+  "activityEntities" : [
+    "projectCreated",
+    [
+      {
+        "createdDate" : "2026-04-06T19:53:41Z",
+        "event" : "projectCreated",
+        "id" : "296022F5-1DEC-4CB9-A5E7-7BDA9FEAF57B",
+        "subtitle" : "MyMultiLabelImageClassifier",
+        "title" : "Project Created"
+      }
+    ]
+  ],
+  "authorName" : "Samuel Embaye",
+  "createdDate" : "2026-04-06T19:53:41Z",
+  "description" : "",
+  "id" : "4B4F265E-0CD7-4A36-AEF4-CCB2896FE57D",
+  "license" : "",
+  "location" : "",
+  "modifiedDate" : "2026-04-06T19:53:41Z",
+  "projectName" : "MyMultiLabelImageClassifier",
+  "settingsEntity" : {
+    "snapshotOnExtendTraining" : true,
+    "snapshotOnResumeTraining" : false
+  },
+  "taskType" : "multiLabelImageClassifier",
+  "title" : "Multi-Label Image Classification",
+  "version" : "1.1"
+}
